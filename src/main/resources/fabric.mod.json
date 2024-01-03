@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "theovergrowth",
+	"version": "${version}",
+	"name": "The Overgrowth",
+	"description": "A dense and ancient forest awaits to be discovered",
+	"authors": [
+		"Flint_Mischiff"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/theovergrowth/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.flintmischiff.theovergrowth.TheOvergrowth"
+		],
+		"client": [
+			"net.flintmischiff.theovergrowth.TheOvergrowthClient"
+		],
+		"fabric-datagen": [
+			"net.flintmischiff.theovergrowth.TheOvergrowthDataGenerator"
+		]
+	},
+	"mixins": [
+		"theovergrowth.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.21",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
